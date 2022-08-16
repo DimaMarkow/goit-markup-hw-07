@@ -1,0 +1,80 @@
+.hero-section {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 200px 0px;
+	text-align: center;
+
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url("../image/hero-image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+	color: var(--primary-bg-color);
+	/*outline: 2px solid greenyellow;*/
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.hero-button {
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
+
+	color: var(--primary-bg-color);
+	background-color: var(--accent);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.89;
+	align-items: center;
+	letter-spacing: 0.06em;
+	font-family: inherit;
+
+	transition-property: border;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	cursor: pointer;
+	/* border: 2px solid var(--accent); */
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.section-no-padding {
+	padding-bottom: 94px;
+}
+
+/* sections title */
+.benefits-section .title,
+.work-section .title,
+.team-section .title,
+.client-section .title {
+	color: var(--title-text-color);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+}

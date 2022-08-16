@@ -1,0 +1,158 @@
+.footer {
+	padding: 60px 0px;
+	background-color: #2f303a;
+}
+
+/* Site-logo */
+.footer-logo {
+	color: var(--accent);
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	display: inline-block;
+	margin-bottom: 20px;
+
+	transition-property: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-logo span {
+	color: var(--primary-bg-color);
+	margin-left: -6px;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+	opacity: 0.6;
+}
+
+.address-text {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	font-style: normal;
+}
+
+.address-link {
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-link:hover,
+.address-link:focus {
+	color: #ffffff;
+}
+
+.footer-title {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--primary-bg-color);
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
+
+.footer-soc {
+	display: flex;
+	justify-content: left;
+	gap: 10px;
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+.footer-soc-link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-icon {
+	fill: var(--primary-bg-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+	background-color: var(--accent);
+}
+
+.footer-soc-link:hover .team-soc-icon,
+.footer-soc-link:focus .team-soc-icon {
+	fill: var(--primary-bg-color);
+}
+
+.footer-box {
+	display: flex;
+}
+
+.footer-center {
+	margin-left: 70px;
+}
+
+.footer-right {
+	margin-left: 93px;
+}
+
+.subscr-form {
+	padding: 15px 16px;
+
+	width: 350px;
+	height: 50px;
+
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: #ffffff;
+}
+
+.subscr-form::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.subscr-icon-box {
+	width: 24px;
+	height: 24px;
+}
+
+.subscr-icon {
+	fill: #ffffff;
+}
+
+.subscr-thump {
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer-btn-mrg {
+	margin-left: 12px;
+}
