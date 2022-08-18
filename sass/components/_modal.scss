@@ -15,10 +15,6 @@
 	visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.8);
-}
-
 .modal {
 	position: absolute;
 	top: 50%;
@@ -34,6 +30,10 @@
 	background-color: #ffffff;
 
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(0.8);
+	}
 }
 
 .modal-clo {
@@ -55,8 +55,8 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	fill: #000;
-}
 
-.modal-icon:hover {
-	fill: var(--accent);
+	&:hover {
+		fill: var(--accent);
+	}
 }

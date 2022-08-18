@@ -1,35 +1,44 @@
 .footer {
+	height: 252px;
 	padding: 60px 0px;
 	background-color: #2f303a;
 }
 
-/* Site-logo */
-.footer-logo {
-	color: var(--accent);
-	font-family: Raleway, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	display: inline-block;
-	margin-bottom: 20px;
-
-	transition-property: opacity;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.footer__box {
+	display: flex;
+	position: relative;
 }
 
-.footer-logo span {
-	color: var(--primary-bg-color);
-	margin-left: -6px;
+.footer__contacts {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.footer__socials {
+	position: absolute;
+	top: 0;
+	left: 300px;
 }
 
-.footer-logo:hover,
-.footer-logo:focus {
-	opacity: 0.6;
+.footer__subscr {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
-.address-text {
+.footer__logo {
+	span {
+		color: var(--primary-bg-color);
+		margin-left: -6px;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.7;
+	}
+}
+
+.address__text {
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 1.71;
@@ -37,7 +46,7 @@
 	font-style: normal;
 }
 
-.address-link {
+.address__link {
 	color: rgba(255, 255, 255, 0.6);
 	font-weight: 400;
 	font-size: 14px;
@@ -47,14 +56,14 @@
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+	}
 }
 
-.address-link:hover,
-.address-link:focus {
-	color: #ffffff;
-}
-
-.footer-title {
+.footer__title {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 700;
@@ -67,15 +76,13 @@
 	margin-bottom: 20px;
 }
 
-.footer-soc {
+.footersoc {
 	display: flex;
 	justify-content: left;
 	gap: 10px;
-	/*margin-left: auto;
-	margin-right: auto;*/
 }
 
-.footer-soc-link {
+.footersoc__link {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
@@ -88,38 +95,26 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent);
+	}
 }
 
-.footer-soc-icon {
+.footersoc__icon {
 	fill: var(--primary-bg-color);
+
+	.footersoc__link:hover &,
+	.footersoc__link:focus & {
+		fill: var(--primary-bg-color);
+	}
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-	background-color: var(--accent);
-}
-
-.footer-soc-link:hover .team-soc-icon,
-.footer-soc-link:focus .team-soc-icon {
-	fill: var(--primary-bg-color);
-}
-
-.footer-box {
-	display: flex;
-}
-
-.footer-center {
-	margin-left: 70px;
-}
-
-.footer-right {
-	margin-left: 93px;
-}
-
-.subscr-form {
+.footer__form {
 	padding: 15px 16px;
 
-	width: 350px;
+	width: 358px;
 	height: 50px;
 
 	background-color: transparent;
@@ -127,32 +122,32 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	color: #ffffff;
+
+	&::placeholder {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.25;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
 }
 
-.subscr-form::placeholder {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
-	letter-spacing: 0.03em;
-	color: rgba(255, 255, 255, 0.6);
-}
-
-.subscr-icon-box {
+.footer__iconbox {
 	width: 24px;
 	height: 24px;
 }
 
-.subscr-icon {
+.footer__icon {
 	fill: #ffffff;
 }
 
-.subscr-thump {
+.footer__thump {
 	display: inline-block;
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-.footer-btn-mrg {
+.footer__btn {
 	margin-left: 12px;
 }
